@@ -5,7 +5,8 @@ let exec = require('child_process').exec,
 const SVN_URL = 'https://code.ds.gome.com.cn/svn/gome_bh_jszx/30_Coding/NewDevMode/trunk/car/gome-bhc-car';
 const userName = "lijinya";
 const SVN_PATH = "D:\\CAR_SRC_SVN"
-const SVN_NAME =  "car-wap";
+const list = SVN_URL.split('/');
+const SVN_NAME =  list[list.length - 1];
 const UPDATE_PATH = path.resolve(__dirname, '..');
 
 let arr = new Date().toLocaleString().split(' ');

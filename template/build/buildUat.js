@@ -7,8 +7,8 @@ const SVN_URL = 'https://code.ds.gome.com.cn/svn/gome_bh_jszx/30_Coding/NewDevMo
 const userName = "lijianbing";
 //压缩包本地目录（写到压缩包目录的上一级）
 const SVN_PATH = "E:\\gome_bh_jszx\\30_Coding\\NewDevMode\\trunk\\car";
-//本地压缩包的父级文件名
-const SVN_NAME =  "car-wap";
+const list = SVN_URL.split('/');
+const SVN_NAME =  list[list.length - 1];
 const UPDATE_PATH = path.resolve(__dirname, '..');
 
 let arr = new Date().toLocaleString().split(' ');
